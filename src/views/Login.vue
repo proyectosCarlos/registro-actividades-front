@@ -1,1 +1,3 @@
-<template>hola</template>
+<template>
+  <Button>Hola</Button>
+</template>

@@ -1,11 +1,27 @@
-import './assets/main.css'
+import "./assets/main.css";
+import PrimeVue from "primevue/config";
+import Aura from "@/presets/aura";
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
 
-const app = createApp(App)
+//componentes primevue -------------------
+import Button from "primevue/button";
 
-app.use(router)
+//--------------------------
 
-app.mount('#app')
+const app = createApp(App);
+
+//agregar componentes-----------
+app.component("Button", Button);
+//----------------------
+
+app.use(PrimeVue, {
+  unstyled: true,
+  pt: Aura, //apply preset
+});
+
+app.use(router);
+
+app.mount("#app");
