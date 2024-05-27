@@ -1,5 +1,7 @@
 <template>
-  <Button>Hola</Button>
+  <div class="bg-blue-200">
+    <RouterView />
+  </div>
 </template>
 
 <script setup>
