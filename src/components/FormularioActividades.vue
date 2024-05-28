@@ -47,9 +47,9 @@
           type="button"
           label="Cancelar"
           severity="secondary"
-          @click="visible = false"
+          @click="verModal = false"
         ></Button>
-        <Button type="button" label="Crear" @click="visible = false"></Button>
+        <Button type="button" label="Crear" @click="verModal = false"></Button>
       </div>
     </Dialog>
 
