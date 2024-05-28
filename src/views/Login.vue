@@ -28,9 +28,8 @@
             placeholder="Ingresa tu contraseña"
             aria-autocomplete="false"
           />
-          <router-link class="w-100">
-            <Button label="Ingresar" class="w-full"
-          /></router-link>
+
+          <Button label="Ingresar" class="w-full" @click="logearUsuario" />
         </div>
       </template>
     </Card>
@@ -39,6 +38,12 @@
 
 <script setup>
 import { ref } from "vue";
+
+import router from "@/router";
+
+const logearUsuario = () => {
+  router.push({ name: "panel-principal" });
+};
 
 const login = ref("");
 const pass = ref("");
