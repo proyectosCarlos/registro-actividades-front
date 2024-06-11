@@ -17,6 +17,7 @@ import Badge from "primevue/badge";
 import Dialog from "primevue/dialog";
 import Calendar from "primevue/calendar";
 import Textarea from "primevue/textarea";
+import Divider from "primevue/divider";
 
 //--------------------------
 
@@ -32,6 +33,7 @@ app.component("Badge", Badge);
 app.component("Dialog", Dialog);
 app.component("Calendar", Calendar);
 app.component("Textarea", Textarea);
+app.component("Divider", Divider);
 
 //----------------------
 
