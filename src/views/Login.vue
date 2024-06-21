@@ -38,7 +38,9 @@
 
           <span class="flex gap-1"
             >No tienes una cuenta?
-            <router-link class="font-bold">Registrate</router-link></span
+            <router-link class="font-bold" to="/registro"
+              >Registrate</router-link
+            ></span
           >
         </div>
       </div>

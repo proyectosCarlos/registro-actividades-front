@@ -18,6 +18,8 @@ import Dialog from "primevue/dialog";
 import Calendar from "primevue/calendar";
 import Textarea from "primevue/textarea";
 import Divider from "primevue/divider";
+import Toast from "primevue/toast";
+import ToastService from "primevue/toastservice";
 
 //--------------------------
 
@@ -34,6 +36,7 @@ app.component("Dialog", Dialog);
 app.component("Calendar", Calendar);
 app.component("Textarea", Textarea);
 app.component("Divider", Divider);
+app.component("Toast", Toast);
 
 //----------------------
 
@@ -43,5 +46,6 @@ app.use(PrimeVue, {
 });
 
 app.use(router);
+app.use(ToastService);
 
 app.mount("#app");
